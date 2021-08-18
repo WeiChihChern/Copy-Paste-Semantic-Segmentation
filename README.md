@@ -1,13 +1,15 @@
 # Copy-and-Paste
-Simple Copy and Paste Implementation for Semantic Segmentation
-</br>
-</br>
-Link to the [paper](https://arxiv.org/abs/2012.07177) </br>
+Copy and Paste Implementation for Semantic Segmentation. Link to the [paper](https://arxiv.org/abs/2012.07177) </br>
 </br>
 </br>
 
-### Notice
-- If you had colored masks rather than class index valued mask, you can use [repo](https://github.com/WeiChihChern/RGBMask2Gray) to convert colored mask to one-hot encoded mask before using this repo.
+## Notice
+- Annotation should be in object index. For instance: </br>
+Class #0: 0, 0, 0 </br>
+Class #1: 1, 1, 1 </br>
+Class #2: 2, 2, 2 </br>
+etc. </br>
+An example can be found [here](https://github.com/WeiChihChern/Copy-and-Paste-for-Segmentation/blob/main/Example/data/train_mask/something_107.png "here"). Although you might not see the mask since each class has low intensity values.
 </br>
 
 
@@ -17,7 +19,7 @@ Link to the [paper](https://arxiv.org/abs/2012.07177) </br>
 - Current implementation contains copy then paste only. Since semantic segmentation annotation may not be labeled as instance segmentation (instance wise annotated).
 - Paste with transaltion (x,y shift) supported.
 - Rotation and Scaling supported.
-- Augmentation probability control added, so you can ignore/increase augmentation to certain class(es) (5/8/2021).
+- Augmentation probability control added, so you can ignore/increase augmentation to certain class(es) 
 
 ### Augmentation Flowchart:
 1.  Put `SemanticCopyandPaste()` before other albumentations augmentation (See demo [here](https://github.com/WeiChihChern/copy-and-paste/blob/main/Example/Demo.ipynb "here"))
@@ -28,5 +30,7 @@ Link to the [paper](https://arxiv.org/abs/2012.07177) </br>
 Before Augmentation:
 ![image](https://user-images.githubusercontent.com/40074617/113963987-9a385a00-97f8-11eb-8ee3-6c3f0bbdb426.png) </br>
 After Augmentation: </br>
-![image](https://user-images.githubusercontent.com/40074617/114114686-581e1f80-98af-11eb-8e34-45dfea8344cc.png)
+![image](https://user-images.githubusercontent.com/40074617/114114686-581e1f80-98af-11eb-8e34-45dfea8344cc.png) </br>
+Another Example using another dataset: </br>
+<img width="370" alt="Screen Shot 2021-08-17 at 11 47 23 PM" src="https://user-images.githubusercontent.com/40074617/129833869-e9e1b184-1de2-43c8-a9ff-79e1d1570c72.png"> </br>
 
