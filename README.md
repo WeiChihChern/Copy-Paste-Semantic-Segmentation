@@ -1,5 +1,5 @@
 # Copy-and-Paste
-Copy and Paste Implementation for Semantic Segmentation. Link to the [paper](https://arxiv.org/abs/2012.07177) </br>
+Copy and Paste Implementation for Semantic Segmentation. Link to the [paper](https://arxiv.org/abs/2012.07177). </br>
 </br>
 </br>
 
@@ -9,7 +9,7 @@ Class #0: 0, 0, 0 </br>
 Class #1: 1, 1, 1 </br>
 Class #2: 2, 2, 2 </br>
 etc. </br>
-An example can be found [here](https://github.com/WeiChihChern/Copy-and-Paste-for-Segmentation/blob/main/Example/data/train_mask/something_107.png "here"). Although you might not see the mask since each class has low intensity values.
+An example can be found [here](https://github.com/WeiChihChern/Copy-Paste-Semantic-Segmentation/tree/master/Example/data/train_mask "here"). Although you might not see the mask since each class has low intensity values.
 </br>
 
 
@@ -34,3 +34,13 @@ After Augmentation: </br>
 Another Example using another dataset: </br>
 <img width="370" alt="Screen Shot 2021-08-17 at 11 47 23 PM" src="https://user-images.githubusercontent.com/40074617/129833869-e9e1b184-1de2-43c8-a9ff-79e1d1570c72.png"> </br>
 
+
+# Citing
+    @misc{Chern:2021,
+      Author = {Wei Chih Chern},
+      Title = {Copy-Paste for Semantic Segmenetation},
+      Year = {2021},
+      Publisher = {GitHub},
+      Journal = {GitHub repository},
+      Howpublished = {\url{https://github.com/WeiChihChern/Copy-Paste-Semantic-Segmentation}}
+    }
