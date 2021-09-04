@@ -27,12 +27,13 @@ An example can be found [here](https://github.com/WeiChihChern/Copy-Paste-Semant
 
 
 ### Before and After
-Before Augmentation:
-![image](https://user-images.githubusercontent.com/40074617/113963987-9a385a00-97f8-11eb-8ee3-6c3f0bbdb426.png) </br>
+Before Augmentation: </br>
+<img src="https://user-images.githubusercontent.com/40074617/113963987-9a385a00-97f8-11eb-8ee3-6c3f0bbdb426.png" width="800"> </br>
 After Augmentation: </br>
-![image](https://user-images.githubusercontent.com/40074617/114114686-581e1f80-98af-11eb-8e34-45dfea8344cc.png) </br>
+<img src="https://user-images.githubusercontent.com/40074617/114114686-581e1f80-98af-11eb-8e34-45dfea8344cc.png" width="800"> </br>
+
 Another Example using another dataset: </br>
-<img width="370" alt="Screen Shot 2021-08-17 at 11 47 23 PM" src="https://user-images.githubusercontent.com/40074617/129833869-e9e1b184-1de2-43c8-a9ff-79e1d1570c72.png"> </br>
+<img width="800" alt="Screen Shot 2021-08-17 at 11 47 23 PM" src="https://user-images.githubusercontent.com/40074617/129833869-e9e1b184-1de2-43c8-a9ff-79e1d1570c72.png"> </br>
 
 
 # Citing
