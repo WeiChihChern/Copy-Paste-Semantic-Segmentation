@@ -3,25 +3,23 @@ Copy and Paste Implementation for Semantic Segmentation. Link to the [paper](htt
 </br>
 </br>
 
-## Notice
-- Annotation should be in object index. For instance: </br>
-Class #0: 0, 0, 0 </br>
-Class #1: 1, 1, 1 </br>
-Class #2: 2, 2, 2 </br>
-etc. </br>
-An example can be found [here](https://github.com/WeiChihChern/Copy-Paste-Semantic-Segmentation/tree/master/Example/data/train_mask "here"). Although you might not see the mask since each class has low intensity values.
+## Data format
+The required masks images should contains class idx as pixel intensity rather than color encoded.
+For instance, pixels belongs to class #0 should have pxiels values as 0, and class #1 should have 1s.
+
+An example can be found [here](https://github.com/WeiChihChern/Copy-Paste-Semantic-Segmentation/tree/master/Example/data/train_mask "here"). Though you might not see the mask because each class has low intensity values.
 </br>
 
 
 
 ### Current Status
 - Tested. Works with albumentations. (See demo [here](https://github.com/WeiChihChern/copy-and-paste/blob/main/Example/Demo.ipynb "here"))
-- Current implementation contains copy then paste only. Since semantic segmentation annotation may not be labeled as instance segmentation (instance wise annotated).
+- Current implementation contains copy then paste only. No instance level copy and paste.
 - Paste with transaltion (x,y shift) supported.
 - Rotation and Scaling supported.
-- Augmentation probability control added, so you can ignore/increase augmentation to certain class(es) 
+- Augmentation probability control added, so you can ignore/increase augmentation probability to certain class(es) 
 
-### Augmentation Flowchart:
+### How to use:
 1.  Put `SemanticCopyandPaste()` before other albumentations augmentation (See demo [here](https://github.com/WeiChihChern/copy-and-paste/blob/main/Example/Demo.ipynb "here"))
 2. Then follow other augmentation such as flip, transpose, random crop, etc.
 
